@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="writerApp">
+<head>
+    <title>WriteLiner</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.1.1-1/css/journal/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/media/css/fontello.css">
+    <link rel="stylesheet" href="/media/css/abn_tree.css">
+    <link rel="stylesheet" href="/media/css/style.css" />
+</head>
+<body>
+
+<div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WriteLiner</a>
+    </div>
+    <p class="navbar-text">{{ writing_title }}</p>
+    <div class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+                <input type="text" placeholder="Email" class="form-control input-sm">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" class="form-control input-sm">
+            </div>
+            <button type="submit" class="btn btn-success btn-sm">Sign in</button>
+        </form>
+    </div>
+    <!--/.navbar-collapse -->
+</div>
+
+<div class="container-fluid" ng-view>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/rangy/1.2.3/rangy-core.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/hallo.js/1.0.2/hallo.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular-route.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular-resource.min.js"></script>
+
+<script src="/media/js/abn_tree_directive.js"></script>
+<script src="/media/js/writing.js"></script>
+</body>
+</html>

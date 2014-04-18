@@ -1,0 +1,7 @@
+
+.fa-bold:before { content: '\e801'; } /* '' */
+.fa-italic:before { content: '\e802'; } /* '' */
+.fa-align-left:before { content: '\e803'; } /* '' */
+.fa-align-center:before { content: '\e804'; } /* '' */
+.fa-align-right:before { content: '\e805'; } /* '' */
+.fa-odnoklassniki:before { content: '\e800'; } /* '' */

@@ -1,0 +1,10 @@
+<div class="container">
+    <ul>
+        <li ng-repeat="w in writings">
+            <a href="#/editor/{{ w._id }}">{{ w.title }}</a>
+
+            <button class="btn btn-danger" ng-click="deleteWriting($index)">delete</button>
+        </li>
+    </ul>
+    <button class="btn btn-primary" ng-click="createWriting()">create Writing</button>
+</div>
